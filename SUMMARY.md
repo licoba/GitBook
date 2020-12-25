@@ -15,7 +15,7 @@
   * [Java高级特性](cha-lou-bu-que/java-xiang-guan/java-gao-ji-te-xing/README.md)
     * [Java注解机制](cha-lou-bu-que/java-xiang-guan/java-gao-ji-te-xing/java-gao-ji-te-xing-zhu-jie-ji-zhi.md)
 * [Android相关](cha-lou-bu-que/android-xiang-guan/README.md)
-  * [四大组件](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/README.md)
+  * [Android四大组件](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/README.md)
     * [Activity的启动模式](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/activity-de-qi-dong-mo-shi.md)
     * [四大组件之 BroadcastReceiver](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/si-da-zu-jian-zhi-broadcastreceiver.md)
   * [🤕 MVC、MVP、MVVM的区别](cha-lou-bu-que/android-xiang-guan/mvcmvpmvvm-de-qu-bie.md)
