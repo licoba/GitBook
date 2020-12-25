@@ -16,11 +16,15 @@ public abstract SharedPreferences getSharedPreferences(String name, @Preferences
 
 在cs.android.com里搜索`public abstract class Context`,也就是Context类，来到了`frameworks/base/core/java/android/content/Context.java`
 
-然后搜索`getSharedPreferences`方法，在左侧可以看到筛选出来的结果 ![](https://pic.downk.cc/item/5fa261041cd1bbb86b167801.jpg)
+然后搜索`getSharedPreferences`方法，在左侧可以看到筛选出来的结果 
+
+![](https://pic.downk.cc/item/5fa261041cd1bbb86b167801.jpg)
 
 按住control，顺着点击方法，可以在下面的「覆盖来源」部分，看到抽象类的具体实现，Context的具体实现类就是ContextImpl，点进去就是我们想要看的源码了。
 
- ![](https://pic.downk.cc/item/5fa366611cd1bbb86b476fb3.jpg)
+ 
+
+![](https://pic.downk.cc/item/5fa366611cd1bbb86b476fb3.jpg)
 
 上代码
 
