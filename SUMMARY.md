@@ -25,5 +25,5 @@
   * [hashCode 和 equals 方法](cha-lou-bu-que/java-xiang-guan/hashcode-he-equals-fang-fa.md)
   * [HashMap 和 LinkedHashMap](cha-lou-bu-que/java-xiang-guan/hashmap-he-linkedhashmap.md)
   * [Java注解机制](cha-lou-bu-que/java-xiang-guan/java-zhu-jie-ji-zhi.md)
-  * [int和Integer的比较](cha-lou-bu-que/java-xiang-guan/int-he-integer-de-bi-jiao.md)
+  * [Integer和int的比较](cha-lou-bu-que/java-xiang-guan/int-he-integer-de-bi-jiao.md)
 

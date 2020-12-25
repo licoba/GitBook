@@ -2,7 +2,7 @@
 description: 重点：自动装箱和拆箱、值比较和地址比较
 ---
 
-# int和Integer的比较
+# Integer和int的比较
 
 ## 区别比较
 
