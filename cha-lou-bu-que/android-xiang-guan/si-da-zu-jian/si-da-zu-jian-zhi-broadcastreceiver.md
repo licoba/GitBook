@@ -1,5 +1,5 @@
 ---
-description: BroadcastReceiver的两种注册方式以及两种不同广播的区别
+description: BroadcastReceiver的两种注册方式以及两种广播的区别
 ---
 
 # 四大组件之 BroadcastReceiver
