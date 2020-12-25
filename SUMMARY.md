@@ -1,6 +1,6 @@
 # Table of contents
 
-* [介绍](README.md)
+* [Hello Android!](README.md)
 
 ## 查漏补缺
 
