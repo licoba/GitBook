@@ -5,7 +5,7 @@
 ## 查漏补缺
 
 * [Java相关](cha-lou-bu-que/java-xiang-guan/README.md)
-  * [Java虚拟机相关](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji-xiang-guan.md)
+  * [JVM运行时数据区域](cha-lou-bu-que/java-xiang-guan/jvm-yun-hang-shi-shu-ju-qu-yu.md)
   * [JVM的类加载过程](cha-lou-bu-que/java-xiang-guan/jvm-de-lei-jia-zai-guo-cheng.md)
   * [Java高级特性-注解机制](cha-lou-bu-que/java-xiang-guan/java-gao-ji-te-xing-zhu-jie-ji-zhi.md)
   * [hashCode 和 equals 方法](cha-lou-bu-que/java-xiang-guan/hashcode-he-equals-fang-fa.md)
