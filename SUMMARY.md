@@ -6,6 +6,7 @@
 
 * [Java相关](cha-lou-bu-que/java-xiang-guan/README.md)
   * [Java基础](cha-lou-bu-que/java-xiang-guan/java-ji-chu/README.md)
+    * [谈一谈HashCode](cha-lou-bu-que/java-xiang-guan/java-ji-chu/tan-yi-tan-hashcode.md)
     * [Static和Final关键字](cha-lou-bu-que/java-xiang-guan/java-ji-chu/static-he-final-guan-jian-zi.md)
     * [HashMap 和 LinkedHashMap](cha-lou-bu-que/java-xiang-guan/java-ji-chu/hashmap-he-linkedhashmap.md)
     * [Integer和int的比较](cha-lou-bu-que/java-xiang-guan/java-ji-chu/int-he-integer-de-bi-jiao.md)
@@ -37,8 +38,11 @@
   * [抽象工厂模式](cha-lou-bu-que/she-ji-mo-shi-xiang-guan/chou-xiang-gong-chang-mo-shi.md)
   * [单例模式](cha-lou-bu-que/she-ji-mo-shi-xiang-guan/dan-li-mo-shi.md)
 * [网络相关](cha-lou-bu-que/wang-luo-xiang-guan/README.md)
+  * [TCP和UDP协议](cha-lou-bu-que/wang-luo-xiang-guan/tcp-he-udp-xie-yi.md)
   * [网络协议相关知识](cha-lou-bu-que/wang-luo-xiang-guan/wang-luo-xie-yi-xiang-guan-zhi-shi.md)
 * [算法相关](cha-lou-bu-que/suan-fa-xiang-guan/README.md)
+  * [数据结构相关](cha-lou-bu-que/suan-fa-xiang-guan/shu-ju-jie-gou-xiang-guan/README.md)
+    * [二叉查找树](cha-lou-bu-que/suan-fa-xiang-guan/shu-ju-jie-gou-xiang-guan/er-cha-cha-zhao-shu.md)
   * [动态规划相关](cha-lou-bu-que/suan-fa-xiang-guan/dong-tai-gui-hua-xiang-guan.md)
   * [排序算法](cha-lou-bu-que/suan-fa-xiang-guan/pai-xu-suan-fa/README.md)
     * [归并排序算法](cha-lou-bu-que/suan-fa-xiang-guan/pai-xu-suan-fa/gui-bing-pai-xu-suan-fa.md)
@@ -48,4 +52,6 @@
 * [Kotlin相关](cha-lou-bu-que/kotlin-xiang-guan/README.md)
   * [Kotlin快速入门](cha-lou-bu-que/kotlin-xiang-guan/kotlin-kuai-su-ru-men.md)
   * [Kotlin协程](cha-lou-bu-que/kotlin-xiang-guan/kotlin-xie-cheng.md)
+* [源码分析](cha-lou-bu-que/yuan-ma-fen-xi/README.md)
+  * [SharedPreferences源码分析](cha-lou-bu-que/yuan-ma-fen-xi/sharedpreferences-yuan-ma-fen-xi.md)
 
