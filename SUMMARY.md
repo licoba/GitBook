@@ -5,6 +5,7 @@
 ## 查漏补缺
 
 * [Android相关](cha-lou-bu-que/android-xiang-guan/README.md)
+  * [四大组件之 BroadcastReceiver](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian-zhi-broadcastreceiver.md)
   * [ListView 和 RecycleView](cha-lou-bu-que/android-xiang-guan/listview-he-recycleview.md)
   * [JVM 和 DVM 相关知识](cha-lou-bu-que/android-xiang-guan/jvm-he-dvm-xiang-guan-zhi-shi.md)
   * [Handler 和 Looper 相关知识](cha-lou-bu-que/android-xiang-guan/handler-he-looper-xiang-guan-zhi-shi.md)
