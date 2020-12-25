@@ -42,3 +42,5 @@ ViewHolder 可以设置成为一个静态类，ViewHolder 里面只用存储需�
 4. RecycleView 相比起 ListView 起来更灵活丰富，例如动画效果、拖动效果等
 5. RecycleView 在嵌套滚动方面支持比较足，例如 RecycleView 向上滑动的时候能收起其它 layout
 
+![ListView&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x6DFB;&#x52A0;headerView&#x548C;footerView](https://raw.githubusercontent.com/licoba/images/master/20201225-152032-NMrxRj.jpg?token=AETOTFKS7RCGEC6RMA6LV6C74WJP6)
+
