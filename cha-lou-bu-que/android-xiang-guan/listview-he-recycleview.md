@@ -1,13 +1,13 @@
 # ListView 和 RecycleView
 
-### 一、ListView 的优化
+## 一、ListView 的优化
 
-#### 值得优化的地方
+### 值得优化的地方
 
 * 每次滑动显示 item 的时候，都会走到 getView 方法里面去，如果每次 getView 都需要用 View.inflate 方法去获取一个新的 view，会引起内存上的增加，并且 View.inflate 方法是将 xml 文件解析成为 View 对象，如果 item 的构成比较复杂的话，这个步骤将是一个非常耗内存的操作。
 * findViewById 这个操作也是比较耗时的，因为这个方法要找到指定的布局文件，进行不断地解析每个节点：从最顶端的节点进行一层一层的解析查询，找到后在一层一层的返回，如果在左边没找到，就会接着解析右边，并进行相应的查询，直到找到位置。
 
-#### 优化方法
+### 优化方法
 
 * 复用 getView 方法中的 convertView 在 getView 方法中，ListView 为我们提供了一个 convertView 对象，这个对象就是 ListView 的历史缓存对象，我们可以在 convertView 不为空的时候去复用他，而不用去 new 一个对象，这样可以减少内存上的损耗。
 * 使用 ViewHolder 减少 findViewById 的使用
@@ -23,7 +23,7 @@ ViewHolder 可以设置成为一个静态类，ViewHolder 里面只用存储需�
 * 可以使用 RecycleView 来代替 ListView，listView 每次数据有变化都会调用 notifyDataSetChanged 来刷新整个列表，使用 RecycleView 可以实现 item 的局部刷新
 * 分页加载 当数据量过大的时候，可以考虑做分页加载，来减少列表过长的时候容易出现的卡顿现象。
 
-#### 总结
+### 总结
 
 * 复用 convertView
 * 使用 ViewHolder 来代替 findViewById
@@ -32,7 +32,7 @@ ViewHolder 可以设置成为一个静态类，ViewHolder 里面只用存储需�
 * 使用 RecycleView 局部刷新 item
 * 分页加载
 
-### 二、ListView 和 RecycleView 的区别
+## 二、ListView 和 RecycleView 的区别
 
 或者说 RecycleView 相比 ListView 起来有什么优势？
 

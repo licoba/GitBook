@@ -1,11 +1,11 @@
 # Android内存泄露检测
 
-### 内存泄露的检测方法
+## 内存泄露的检测方法
 
 * Android Studio 自带的`Android Profiler`
 * 第三方库`LeakCanary`
 
-### 常见的内存泄露原因
+## 常见的内存泄露原因
 
 * Handler 造成内存泄露
 

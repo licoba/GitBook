@@ -2,9 +2,9 @@
 
 废话不多说，一图胜千言：
 
- ![](https://pic.downk.cc/item/5e8c4a10504f4bcb040a4656.jpg)
+![](https://pic.downk.cc/item/5e8c4a10504f4bcb040a4656.jpg)
 
-### Android 进程间通信方法
+## Android 进程间通信方法
 
 > 文件共享、AIDL、Intent、Messenger、ContentProvider、Socket
 
@@ -32,21 +32,21 @@
 
 优点：功能强大，通过读写网络传输字节流，支持一对多的并发的实时通讯。 缺点：不支持直接的 RPC 使用场景：网络的数据交换
 
-### Q&A?
+## Q&A?
 
-#### 一、IPC 和 RPC 的区别？
+### 一、IPC 和 RPC 的区别？
 
 * `IPC` 仅仅完成进程间的互通信、没有函数调用功能。
 * `RPC` 强调的是调用，即一个进程直接调用另外一个进程中的方法。
 
 （RPC 其实就是添加了进程间函数调用功能的 IPC）
 
-#### 二、ContentProvider 和 AIDL 的区别？
+### 二、ContentProvider 和 AIDL 的区别？
 
 * ContentProvider 需要定义数据结构，主要是将自己的数据暴露给其它的应用，数据一般不是实时的。
 * AIDL 主要用在一些高并发、并且对实时性要求比较高的场景。
 
-#### 三、IPC 和 AIDL 的全称是什么？
+### 三、IPC 和 AIDL 的全称是什么？
 
 这个问题说实话当时被问到的时候有一点懵，没有答上来，因为进程间的通信用得实在是太少了，这里不禁还是要感慨一句：实践出真知啊……理论还是太难理解了，就算是理解了，现场回答的时候还是很容易掉链子，因为记不住。
 
@@ -55,13 +55,12 @@
 * IPC：`inter-process communication`（跨进程通信）
 * AIDL：`Android interface Define Language`（安卓接口定义语言）
 
-#### 四、AIDL 的调用过程是同步还是异步？如何指定 AIDL 为异步调用？
+### 四、AIDL 的调用过程是同步还是异步？如何指定 AIDL 为异步调用？
 
 * AIDL 的调用过程是 **同步的**。
 * 既然是同步的那么耗时操作就可能会导致 ANR，怎么规避这种情况呢？  
 
-
-  解决方案是把调用操作放到子线程，然后再用 handler 进行 ui 的更新即可。
+解决方案是把调用操作放到子线程，然后再用 handler 进行 ui 的更新即可。
 
 【参考文章】
 

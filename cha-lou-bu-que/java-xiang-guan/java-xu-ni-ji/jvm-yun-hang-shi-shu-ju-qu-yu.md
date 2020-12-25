@@ -2,7 +2,7 @@
 
 Java、Groovy 语言，也可以跑在 Java 虚拟机上面，因为他们都可以编译成为.class 文件，.class 文件就是字节码，字节码是运行在 Java 虚拟机上面的。
 
-### JVM 数据区域（5 个）
+## JVM 数据区域（5 个）
 
 ![](https://pic.downk.cc/item/5fe3f3743ffa7d37b339ac4a.jpg)
 

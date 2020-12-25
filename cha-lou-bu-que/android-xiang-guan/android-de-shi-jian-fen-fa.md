@@ -6,7 +6,7 @@
 
 ![](https://pic.downk.cc/item/5e8c940f504f4bcb044cf916.jpg)
 
-### 认识三个最主要的方法
+## 认识三个最主要的方法
 
 * public boolean dispatchTouchEvent\(MotionEvent ev\)
 * public boolean onTouchEvent\(MotionEvent event\)
@@ -24,7 +24,7 @@
 > * onTouchEvent 方法用于事件的处理，返回 true 表示消费处理当前事件，返回 false 则不处理，交给子控件进行继续分发。
 > * onInterceptTouchEvent 是 ViewGroup 中才有的方法，View 中没有，它的作用是负责事件的拦截，返回 true 的时候表示拦截当前事件，不继续往下分发，交给自身的 onTouchEvent 进行处理。返回 false 则不拦截，继续往下传。这是 ViewGroup 特有的方法，因为 ViewGroup 中可能还有子 View，而在 Android 中 View 中是不能再包含子 View 的（iOS 可以）。
 
-### Demo 程序 1
+## Demo 程序 1
 
 这里的 Demo 主要用来测试单布局的事件传递，也就是从 Activity 传递到 Button
 
@@ -38,7 +38,7 @@
 
 ![](https://pic.downk.cc/item/5e888257504f4bcb04f53350.png)
 
-### Demo 程序 2
+## Demo 程序 2
 
 新建一个 MyLayout 继承自 LinearLayout，重写文章开头所提到的三个方法，然后在 xml 中在 MyButton 的外层使用 MyLayout 包裹住。
 
@@ -46,13 +46,13 @@
 
 而`onInterceptTouchEvent`是在`super.dispatchTouchEvent(ev);`方法里面调用的，`onInterceptTouchEvent`默认直接返回了 false，也就是不进行拦截，将事件传递给 MyButton
 
-### Case 分类
+## Case 分类
 
 * 如果在 Activity 的 dispatchTouchEvent 方法里面直接返回了 true 或者 false，而不调用 super 的方法，那么事件就被直接消费掉了，不会向下传递，任何其它方法也都不会调用
 * Activity 在分发事件的时候正常调用 super 方法，接着事件会被传递到 ViewGroup。这时候有 3 个情况：一、如果是直接返回 true ，代表事件被 ViewGroup 消耗掉了；**二、如果是返回 false，会走到上一个 View 的 onTouchEvent 方法，也就是 Activity 的 onTouchEvent 方法**，三、如果调用 super 方法，会走到 ViewGroup 的拦截方法。
 * 按照正常的步骤进入 ViewGroup 的拦截方法里面以后，这里有两个出路：一、调用 super 或者返回 false，表示不拦截，这个时候就会走到 View 的 dispatchTouchEvent 方法里面去； 二、如果是返回了 true，代表事件被 ViewGroup 拦截了，这里的被拦截的事件，会交给 ViewGroup 自己处理，也就是会走到自己的 OnTouchEvent 方法里面去，如果自己处理掉，返回 true，则事件消耗结束；如果是返回了 false 或者是调用了 super 方法，那么会走到 Activity 的事件处理方法里面去。
 
-### 总结
+## 总结
 
 * dispatchTouchEvent 和 onTouchEvent 一旦 return true,事件就停止传递了（没有谁能再收到这个事件）。
 * dispatchTouchEvent 和 onTouchEvent 在 return false 的时候事件都回传给父控件的 onTouchEvent 处理。
