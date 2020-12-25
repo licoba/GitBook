@@ -5,6 +5,7 @@
 ## 查漏补缺
 
 * [Android相关](cha-lou-bu-que/android-xiang-guan/README.md)
+  * [Activity的启动模式](cha-lou-bu-que/android-xiang-guan/activity-de-qi-dong-mo-shi.md)
   * [Android四大组件](cha-lou-bu-que/android-xiang-guan/android-si-da-zu-jian.md)
   * [Android基础](cha-lou-bu-que/android-xiang-guan/android-ji-chu.md)
 * [Java相关](cha-lou-bu-que/java-xiang-guan/README.md)
