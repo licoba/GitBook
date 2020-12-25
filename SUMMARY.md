@@ -5,6 +5,10 @@
 ## 查漏补缺
 
 * [Android相关](cha-lou-bu-que/android-xiang-guan/README.md)
+  * [Android 线程池原理和使用](cha-lou-bu-que/android-xiang-guan/android-xian-cheng-chi-yuan-li-he-shi-yong.md)
+  * [Android的事件分发](cha-lou-bu-que/android-xiang-guan/android-de-shi-jian-fen-fa.md)
+  * [Android内存泄露检测](cha-lou-bu-que/android-xiang-guan/android-nei-cun-xie-lu-jian-ce.md)
+  * [Android中的动画](cha-lou-bu-que/android-xiang-guan/android-zhong-de-dong-hua.md)
   * [Activity的启动模式](cha-lou-bu-que/android-xiang-guan/activity-de-qi-dong-mo-shi.md)
   * [Android四大组件](cha-lou-bu-que/android-xiang-guan/android-si-da-zu-jian.md)
   * [Android基础](cha-lou-bu-que/android-xiang-guan/android-ji-chu.md)

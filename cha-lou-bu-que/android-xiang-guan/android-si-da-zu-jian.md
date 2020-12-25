@@ -1,7 +1,5 @@
 # Android四大组件
 
-> Create Time: 2020/04/03 Author：licoba
-
 ## 一、Activity
 
 Activity 在 Android 中可以用来显示用户界面，监听用户的点击、滑动或者输入事件，并作出响应
