@@ -1,3 +1,7 @@
+---
+description: BroadcastReceiver的两种注册方式以及种类
+---
+
 # 四大组件之 BroadcastReceiver
 
 ![&#x4E24;&#x79CD;&#x5E7F;&#x64AD;&#x548C;&#x4E24;&#x79CD;&#x6CE8;&#x518C;&#x65B9;&#x5F0F;](../../../.gitbook/assets/image.png)
