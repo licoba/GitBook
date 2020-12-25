@@ -2,7 +2,7 @@
 description: 记录Android相关的知识点，用于巩固所学以及查漏补缺，持续更新。
 ---
 
-# Hello Android!
+# Hello Android !
 
 ### 博客站点
 
