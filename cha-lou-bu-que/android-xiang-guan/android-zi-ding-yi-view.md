@@ -1,4 +1,4 @@
-# Android 自定义 View
+# Android自定义View
 
 ### View的构成
 
