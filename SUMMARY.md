@@ -4,8 +4,17 @@
 
 ## 查漏补缺
 
+* [设计模式相关](cha-lou-bu-que/she-ji-mo-shi-xiang-guan/README.md)
+  * [抽象工厂模式](cha-lou-bu-que/she-ji-mo-shi-xiang-guan/chou-xiang-gong-chang-mo-shi.md)
+  * [单例模式](cha-lou-bu-que/she-ji-mo-shi-xiang-guan/dan-li-mo-shi.md)
+* [网络相关](cha-lou-bu-que/wang-luo-xiang-guan/README.md)
+  * [网络协议相关知识](cha-lou-bu-que/wang-luo-xiang-guan/wang-luo-xie-yi-xiang-guan-zhi-shi.md)
+* [算法相关](cha-lou-bu-que/suan-fa-xiang-guan/README.md)
+  * [动态规划相关](cha-lou-bu-que/suan-fa-xiang-guan/dong-tai-gui-hua-xiang-guan.md)
+  * [排序算法](cha-lou-bu-que/suan-fa-xiang-guan/pai-xu-suan-fa.md)
 * [Kotlin相关](cha-lou-bu-que/kotlin-xiang-guan/README.md)
-  * [Kotlin 协程](cha-lou-bu-que/kotlin-xiang-guan/kotlin-xie-cheng.md)
+  * [Kotlin快速入门](cha-lou-bu-que/kotlin-xiang-guan/kotlin-kuai-su-ru-men.md)
+  * [Kotlin协程](cha-lou-bu-que/kotlin-xiang-guan/kotlin-xie-cheng.md)
 * [Android相关](cha-lou-bu-que/android-xiang-guan/README.md)
   * [四大组件之 BroadcastReceiver](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian-zhi-broadcastreceiver.md)
   * [ListView 和 RecycleView](cha-lou-bu-que/android-xiang-guan/listview-he-recycleview.md)
