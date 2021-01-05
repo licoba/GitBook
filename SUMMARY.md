@@ -12,6 +12,7 @@
     * [Integer和int的比较](cha-lou-bu-que/java-xiang-guan/java-ji-chu/int-he-integer-de-bi-jiao.md)
     * [hashCode 和 equals 方法](cha-lou-bu-que/java-xiang-guan/java-ji-chu/hashcode-he-equals-fang-fa.md)
   * [Java虚拟机](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/README.md)
+    * [Class类文件的组成](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/class-lei-wen-jian-de-zu-cheng.md)
     * [JVM垃圾回收](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/jvm-la-ji-hui-shou.md)
     * [JVM运行时数据区域](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/jvm-yun-hang-shi-shu-ju-qu-yu.md)
     * [JVM的类加载过程](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/jvm-de-lei-jia-zai-guo-cheng.md)
