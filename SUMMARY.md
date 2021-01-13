@@ -13,6 +13,7 @@
     * [Integer和int的比较](cha-lou-bu-que/java-xiang-guan/java-ji-chu/int-he-integer-de-bi-jiao.md)
     * [hashCode 和 equals 方法](cha-lou-bu-que/java-xiang-guan/java-ji-chu/hashcode-he-equals-fang-fa.md)
   * [Java虚拟机](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/README.md)
+    * [Java内存模型](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/java-nei-cun-mo-xing.md)
     * [基于栈的指令集和基于寄存器的指令集](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/ji-yu-zhan-de-zhi-ling-ji-he-ji-yu-ji-cun-qi-de-zhi-ling-ji.md)
     * [虚拟机栈的栈帧结构](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/xu-ni-ji-zhan-de-zhan-zhen-jie-gou.md)
     * [类加载器与双亲委派模型](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/lei-jia-zai-qi-yu-shuang-qin-wei-pai-mo-xing.md)
