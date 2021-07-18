@@ -6,6 +6,7 @@
 
 * [Java相关](cha-lou-bu-que/java-xiang-guan/README.md)
   * [Java基础](cha-lou-bu-que/java-xiang-guan/java-ji-chu/README.md)
+    * [String、StringBuilder、StringBuffer的区别](cha-lou-bu-que/java-xiang-guan/java-ji-chu/stringstringbuilderstringbuffer-de-qu-bie.md)
     * [强类型、弱类型、静态类型、动态类型](cha-lou-bu-que/java-xiang-guan/java-ji-chu/qiang-lei-xing-ruo-lei-xing-jing-tai-lei-xing-dong-tai-lei-xing.md)
     * [谈一谈HashCode](cha-lou-bu-que/java-xiang-guan/java-ji-chu/tan-yi-tan-hashcode.md)
     * [Static和Final关键字](cha-lou-bu-que/java-xiang-guan/java-ji-chu/static-he-final-guan-jian-zi.md)
