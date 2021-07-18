@@ -26,7 +26,7 @@ setMeasureDimension是View的方法（因为ViewGroup是继承自View的）
 
 ![](../../../.gitbook/assets/image%20%2824%29.png)
 
-
+源码不必细看，可以看到是 **先测量完成所有children的宽高，然后在测量自己的。**
 
 
 
