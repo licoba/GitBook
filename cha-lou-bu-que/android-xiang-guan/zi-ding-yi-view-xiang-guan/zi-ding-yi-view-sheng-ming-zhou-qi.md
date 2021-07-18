@@ -10,7 +10,7 @@ description: 自定义View生命周期
 
 在写Demo观察生命周期的时候，发现一个普通的Button会回调两次onMeasure
 
-![&#x56DE;&#x8C03;&#x4E24;&#x6B21;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x7684;onMeasure](../../.gitbook/assets/image%20%2819%29.png)
+![&#x56DE;&#x8C03;&#x4E24;&#x6B21;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x7684;onMeasure](../../../.gitbook/assets/image%20%2819%29.png)
 
 这里就是比较奇怪，为什么要回调两次一模一样的onMeasure？
 
