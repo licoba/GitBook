@@ -12,7 +12,7 @@ description: 一些源码分析工具
 
 #### Mac系统
 
-* scitool: [https://www.scitools.com/](https://www.scitools.com/)
+* scitool understand: [https://www.scitools.com/](https://www.scitools.com/)
 
 #### Windows系统
 
