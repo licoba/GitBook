@@ -14,6 +14,8 @@ description: 自定义View生命周期
 
 这里就是比较奇怪，为什么要回调两次一模一样的onMeasure？
 
+这里就需要看一下View的源码了
+
 
 
 
