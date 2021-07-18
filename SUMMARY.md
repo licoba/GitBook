@@ -67,5 +67,6 @@
   * [Kotlin快速入门](cha-lou-bu-que/kotlin-xiang-guan/kotlin-kuai-su-ru-men.md)
   * [Kotlin协程](cha-lou-bu-que/kotlin-xiang-guan/kotlin-xie-cheng.md)
 * [源码分析](cha-lou-bu-que/yuan-ma-fen-xi/README.md)
+  * [源码分析工具](cha-lou-bu-que/yuan-ma-fen-xi/yuan-ma-fen-xi-gong-ju.md)
   * [SharedPreferences源码分析](cha-lou-bu-que/yuan-ma-fen-xi/sharedpreferences-yuan-ma-fen-xi.md)
 
