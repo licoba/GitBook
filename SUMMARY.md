@@ -28,6 +28,7 @@
     * [Java注解机制](cha-lou-bu-que/java-xiang-guan/java-gao-ji-te-xing/java-gao-ji-te-xing-zhu-jie-ji-zhi.md)
 * [Android相关](cha-lou-bu-que/android-xiang-guan/README.md)
   * [自定义View相关](cha-lou-bu-que/android-xiang-guan/zi-ding-yi-view-xiang-guan/README.md)
+    * [View源码解析](cha-lou-bu-que/android-xiang-guan/zi-ding-yi-view-xiang-guan/view-yuan-ma-jie-xi.md)
     * [Android自定义View](cha-lou-bu-que/android-xiang-guan/zi-ding-yi-view-xiang-guan/android-zi-ding-yi-view.md)
     * [View的绘制流程](cha-lou-bu-que/android-xiang-guan/zi-ding-yi-view-xiang-guan/view-de-hui-zhi-liu-cheng.md)
     * [自定义View生命周期](cha-lou-bu-que/android-xiang-guan/zi-ding-yi-view-xiang-guan/zi-ding-yi-view-sheng-ming-zhou-qi.md)
