@@ -34,6 +34,7 @@
     * [View的绘制流程](cha-lou-bu-que/android-xiang-guan/zi-ding-yi-view-xiang-guan/view-de-hui-zhi-liu-cheng.md)
     * [自定义View生命周期](cha-lou-bu-que/android-xiang-guan/zi-ding-yi-view-xiang-guan/zi-ding-yi-view-sheng-ming-zhou-qi.md)
   * [Android四大组件](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/README.md)
+    * [Activity的启动流程](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/activity-de-qi-dong-liu-cheng.md)
     * [Activity的启动模式](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/activity-de-qi-dong-mo-shi.md)
     * [四大组件之 BroadcastReceiver](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/si-da-zu-jian-zhi-broadcastreceiver.md)
   * [🤕 MVC、MVP、MVVM的区别](cha-lou-bu-que/android-xiang-guan/mvcmvpmvvm-de-qu-bie.md)
