@@ -4,6 +4,9 @@
 
 ## 查漏补缺
 
+* [Question List](cha-lou-bu-que/question-list.md)
+* [操作系统相关](cha-lou-bu-que/cao-zuo-xi-tong-xiang-guan/README.md)
+  * [进程和线程的区别](cha-lou-bu-que/cao-zuo-xi-tong-xiang-guan/jin-cheng-he-xian-cheng-de-qu-bie.md)
 * [Java相关](cha-lou-bu-que/java-xiang-guan/README.md)
   * [Java基础](cha-lou-bu-que/java-xiang-guan/java-ji-chu/README.md)
     * [String、StringBuilder、StringBuffer的区别](cha-lou-bu-que/java-xiang-guan/java-ji-chu/stringstringbuilderstringbuffer-de-qu-bie.md)
@@ -54,6 +57,7 @@
   * [抽象工厂模式](cha-lou-bu-que/she-ji-mo-shi-xiang-guan/chou-xiang-gong-chang-mo-shi.md)
   * [单例模式](cha-lou-bu-que/she-ji-mo-shi-xiang-guan/dan-li-mo-shi.md)
 * [网络相关](cha-lou-bu-que/wang-luo-xiang-guan/README.md)
+  * [浏览器输入url后发生了什么](cha-lou-bu-que/wang-luo-xiang-guan/liu-lan-qi-shu-ru-url-hou-fa-sheng-le-shen-me.md)
   * [TCP和UDP协议](cha-lou-bu-que/wang-luo-xiang-guan/tcp-he-udp-xie-yi.md)
   * [网络协议相关知识](cha-lou-bu-que/wang-luo-xiang-guan/wang-luo-xie-yi-xiang-guan-zhi-shi.md)
 * [算法相关](cha-lou-bu-que/suan-fa-xiang-guan/README.md)
