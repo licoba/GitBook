@@ -61,7 +61,7 @@
   * [三次握手和四次挥手](cha-lou-bu-que/wang-luo-xiang-guan/san-ci-wo-shou-he-si-ci-hui-shou.md)
   * [浏览器输入url后发生了什么](cha-lou-bu-que/wang-luo-xiang-guan/liu-lan-qi-shu-ru-url-hou-fa-sheng-le-shen-me.md)
   * [TCP和UDP协议](cha-lou-bu-que/wang-luo-xiang-guan/tcp-he-udp-xie-yi.md)
-  * [网络协议相关知识](cha-lou-bu-que/wang-luo-xiang-guan/wang-luo-xie-yi-xiang-guan-zhi-shi.md)
+  * [OSI七层模型](cha-lou-bu-que/wang-luo-xiang-guan/wang-luo-xie-yi-xiang-guan-zhi-shi.md)
 * [算法相关](cha-lou-bu-que/suan-fa-xiang-guan/README.md)
   * [数据结构相关](cha-lou-bu-que/suan-fa-xiang-guan/shu-ju-jie-gou-xiang-guan/README.md)
     * [二叉查找树](cha-lou-bu-que/suan-fa-xiang-guan/shu-ju-jie-gou-xiang-guan/er-cha-cha-zhao-shu.md)
