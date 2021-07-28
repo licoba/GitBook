@@ -35,6 +35,22 @@ HTTPS：**安全**的超文本传输协议（Hypertext Transfer Protocol Secure�
 
 四、添加了缓存策略，来降低服务器带宽的压力。
 
+**再说说HTTP 1.1 和 HTTP 2.0 的区别**
+
+一、多路复用
+
+HTTP 1.1在一个TCP连接内，虽然可以发起多个HTTP请求，但是是以FIFO的形式去执行的（串行）一个请求如果特别耗时，就会影响到后面的请求，效率也不够高；HTTP 2.0 的多个HTTP请求是以并行的方式来执行的，多个HTTP请求不会互相影响，提高了效率。
+
+二、头部压缩
+
+压缩了HTTP 1.1的请求头，节省带宽。
+
+三、服务器推送
+
+服务器会主动推送相关资源到客户端，不用客户端再发起请求。
+
+
+
 ### 为什么 HTTPS 安全？
 
 ### 对 HTTP 进行优化
@@ -45,5 +61,6 @@ HTTPS：**安全**的超文本传输协议（Hypertext Transfer Protocol Secure�
 
 【 参考资料】
 
-*  【知乎】[http 1.0 1.1 1.2 区别 ](https://zhuanlan.zhihu.com/p/308381209)
+* 【知乎】[http 1.0 1.1 1.2 区别 ](https://zhuanlan.zhihu.com/p/308381209)
+* 【掘金】[HTTP1.0、HTTP1.1 和 HTTP2.0 的区别](https://juejin.cn/post/6844903489596833800)
 
