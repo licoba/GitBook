@@ -16,11 +16,9 @@ HTTPS：**安全**的超文本传输协议（Hypertext Transfer Protocol Secure�
 
 ### SSL/TLS 协议
 
-【参考文章】
 
-* [HTTP 和 HTTPS 的区别和常见问题](https://www.cnblogs.com/aidixie/p/11764181.html)
 
-### HTTP 1.0、1.1、2.0 之间的区别和特性
+### HTTP 1.0、1.1、2.0之间的区别和特性
 
 **先说说HTTP 1.0 与 HTTP 1.1，主要是添加了一些请求头和响应头，以及新增一些状态码。**
 
@@ -63,4 +61,5 @@ HTTP 1.1在一个TCP连接内，虽然可以发起多个HTTP请求，但是是�
 
 * 【知乎】[http 1.0 1.1 1.2 区别 ](https://zhuanlan.zhihu.com/p/308381209)
 * 【掘金】[HTTP1.0、HTTP1.1 和 HTTP2.0 的区别](https://juejin.cn/post/6844903489596833800)
+* [HTTP 和 HTTPS 的区别和常见问题](https://www.cnblogs.com/aidixie/p/11764181.html)
 
