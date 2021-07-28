@@ -18,7 +18,7 @@ HTTPS：**安全**的超文本传输协议（Hypertext Transfer Protocol Secure�
 
 
 
-### HTTP 1.0、1.1、2.0之间的区别和特性
+### HTTP 1.0、1.1、2.0 之间的区别和特性
 
 **先说说HTTP 1.0 与 HTTP 1.1，主要是添加了一些请求头和响应头，以及新增一些状态码。**
 
