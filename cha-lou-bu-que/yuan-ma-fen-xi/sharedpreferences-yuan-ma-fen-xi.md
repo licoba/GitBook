@@ -1,8 +1,6 @@
 # SharedPreferences源码分析
 
-### 
-
-## SharedPreferences 源码分析
+SharedPreferences应该是用的比较多并且面试也问的比较多的问题了，第一篇源码分析就从它开始
 
 #### 基本使用
 
@@ -13,6 +11,8 @@ edit.putString("licoba","123456");
 edit.apply(); // 保存数据 // 或者 edit.commit()
 sharedPreferences.getString("licoba",""); //读取数据
 ```
+
+### 分析源码
 
 首先从第一行代码开始分析：
 
@@ -81,26 +81,26 @@ public abstract SharedPreferences getSharedPreferences(String name, @Preferences
 看到最后一行的 `return getSharedPreferences(file, mode);`
 
 ```text
-    @Override
-    public SharedPreferences getSharedPreferences(File file, int mode) {
-        SharedPreferencesImpl sp;
-        synchronized (ContextImpl.class) {
-            final ArrayMap<File, SharedPreferencesImpl> cache = getSharedPreferencesCacheLocked();
-            sp = cache.get(file);
-            if (sp == null) {
-                checkMode(mode);
-                ...
-                sp = new SharedPreferencesImpl(file, mode);
-                cache.put(file, sp);
-                return sp;
-            }
+@Override
+public SharedPreferences getSharedPreferences(File file, int mode) {
+    SharedPreferencesImpl sp;
+    synchronized (ContextImpl.class) {
+        final ArrayMap<File, SharedPreferencesImpl> cache = getSharedPreferencesCacheLocked();
+        sp = cache.get(file);
+        if (sp == null) {
+            checkMode(mode);
+            ...
+            sp = new SharedPreferencesImpl(file, mode);
+            cache.put(file, sp);
+            return sp;
         }
-        if ((mode & Context.MODE_MULTI_PROCESS) != 0 ||
-            getApplicationInfo().targetSdkVersion < android.os.Build.VERSION_CODES.HONEYCOMB) {
-            sp.startReloadIfChangedUnexpectedly();
-        }
-        return sp;
     }
+    if ((mode & Context.MODE_MULTI_PROCESS) != 0 ||
+        getApplicationInfo().targetSdkVersion < android.os.Build.VERSION_CODES.HONEYCOMB) {
+        sp.startReloadIfChangedUnexpectedly();
+    }
+    return sp;
+}
 ```
 
 首先是 getSharedPreferencesCacheLocked 从缓存获取 SharedPreferencesImpl 的 map，如果有直接返回，如果没有就 `new SharedPreferencesImpl(file, mode)`直接新建一个，所有这里返回的的不是 SharedPreferences，而是 SharedPreferences 的一个实现类 SharedPreferencesImpl（后面简称为 SPI），如果我们点进 SharedPreferences 看一下，可以看到 **SharedPreferences 实际上只是一个接口** 也就是说 SharedPreferencesImpl 才真正完成了 edit、getString 等操作
@@ -110,13 +110,13 @@ public abstract SharedPreferences getSharedPreferences(String name, @Preferences
 **getString 方法**
 
 ```text
-   public String getString(String key, @Nullable String defValue) {
-        synchronized (mLock) {
-            awaitLoadedLocked(); // //阻塞等待sp将xml读取到内存
-            String v = (String)mMap.get(key);
-            return v != null ? v : defValue;
-        }
+public String getString(String key, @Nullable String defValue) {
+    synchronized (mLock) {
+        awaitLoadedLocked(); // //阻塞等待sp将xml读取到内存
+        String v = (String)mMap.get(key);
+        return v != null ? v : defValue;
     }
+}
 ```
 
 这里可以看到使用了一把锁 mLock， `private final Object mLock = new Object();` 需要等 SP load 完成之后才能 get 到值，所以 SP 只适合轻量化的存储，如果数据量太大，awaitLoadedLocked 没有执行完毕，这时候如果在主线程调用 getString 方法，就是会阻塞主线程造成 ANR。
