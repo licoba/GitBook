@@ -425,6 +425,8 @@ public boolean commit() {
 
 #### 三、SharedPreferences 的性能优化？
 
+
+
 【参考文章】
 
 * [SharedPreferences 源码解析：自带的轻量级 K-V 存储库](https://juejin.im/post/6844904036714430472)
