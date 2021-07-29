@@ -26,7 +26,7 @@ description: 一些源码分析工具
 
 #### Q：Android源码仓库太大了怎么办？
 
-Android源码仓库有四五十个G，下载太慢了，可以参考这篇文章：[https://github.com/foxleezh/AOSP/issues/1](https://github.com/foxleezh/AOSP/issues/1)
+Android源码仓库有四五十个G，下载太慢了，可以参考这篇文章：[https://github.com/foxleezh/AOSP/issues/1](https://github.com/foxleezh/AOSP) 里面有详细的下载和查看方式
 
 我们也用不上Android的全部源代码，只需要下载部分就可以了，如果GitHub访问速度太慢，还可以访问国内的镜像网站。
 
