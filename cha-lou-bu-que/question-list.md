@@ -17,7 +17,7 @@
 
 Android
 
-* SharedPreferences的问题以及优化
+* [SharedPreferences的问题以及优化](https://licoba.gitbook.io/androidbook/cha-lou-bu-que/android-xiang-guan/sharedpreferences-xiang-guan)
 
 
 
