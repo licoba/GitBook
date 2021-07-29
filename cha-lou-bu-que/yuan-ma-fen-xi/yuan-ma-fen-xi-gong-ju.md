@@ -34,6 +34,8 @@ Android源码仓库有四五十个G，下载太慢了，可以参考这篇文章
 
 例如下载`framework/base`下的内容，执行命令：`git clone https://android.googlesource.com/platform/frameworks/base`
 
+或者国内的命令（建议用国内的清华镜像源）：`git clone https://mirrors.ustc.edu.cn/aosp/platform/frameworks/base.git/`
+
 base目录差不多是3GB的大小，十几分钟就可以下载好。
 
 ![](../../.gitbook/assets/image%20%2823%29.png)

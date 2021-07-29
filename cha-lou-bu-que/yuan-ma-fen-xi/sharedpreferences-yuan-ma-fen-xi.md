@@ -1,10 +1,18 @@
 # SharedPreferences源码分析
 
-这是第一篇源码分析文章，希望能开个好头。
+### 基本使用
 
-之前不知道去哪里查看源码，查了一下资料，可以在 [https://cs.android.com/](https://cs.android.com/) 去搜索Android的源码
+```text
+SharedPreferences sharedPreferences = getSharedPreferences("licoba", Context.MODE_PRIVATE);
+SharedPreferences.Editor edit = sharedPreferences.edit();
+edit.putString("licoba","123456");
+edit.apply(); // 保存数据 // 或者 edit.commit() 
+sharedPreferences.getString("licoba",""); //读取数据        
+```
 
-从`SharedPreferences sp = getSharedPreferences("data",MODE_PRIVATE);`开始分析
+首先从第一行代码开始分析：
+
+`SharedPreferences sp = getSharedPreferences("data",MODE_PRIVATE);`
 
 在Android studio里面点击源码，会跳转到Context类的同名抽象方法
 
@@ -16,15 +24,7 @@ public abstract SharedPreferences getSharedPreferences(String name, @Preferences
 
 在cs.android.com里搜索`public abstract class Context`,也就是Context类，来到了`frameworks/base/core/java/android/content/Context.java`
 
-然后搜索`getSharedPreferences`方法，在左侧可以看到筛选出来的结果 
-
-![](https://pic.downk.cc/item/5fa261041cd1bbb86b167801.jpg)
-
-按住control，顺着点击方法，可以在下面的「覆盖来源」部分，看到抽象类的具体实现，Context的具体实现类就是ContextImpl，点进去就是我们想要看的源码了。
-
- 
-
-![](https://pic.downk.cc/item/5fa366611cd1bbb86b476fb3.jpg)
+找到抽象类的具体实现，Context的具体实现类就是ContextImpl，点进去就是我们想要看的源码了。
 
 上代码
 
