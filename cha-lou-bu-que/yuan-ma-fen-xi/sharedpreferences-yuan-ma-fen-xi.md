@@ -58,9 +58,15 @@ public abstract SharedPreferences getSharedPreferences(String name, @Preferences
 
 可以看明显的看到最后还是调用了`public SharedPreferences getSharedPreferences(File file, int mode)`方法去实现，也就是我们常用的name作为形参的方法，实际上只是提供了一个方便访问file的快捷方法。
 
-首先看`synchronized (ContextImpl.class)`这句话，说实话这个写法我还真没怎么用过。参考 [Synchronized的四种用法](https://blog.csdn.net/luoweifu/article/details/46613015)
+首先看`synchronized (ContextImpl.class)`这句话，Synchronized可以参考 [Synchronized的四种用法](https://blog.csdn.net/luoweifu/article/details/46613015)
 
-synchronized修饰类的时候，synchronized作用于类T，是给这个类T加锁，T的所有对象用的是同一把锁。也就是方法体内，对对象的方法调用，同一时间只能有一个对象拿到锁，去执行操作。其实效果和synchronized修饰静态方法是一样的，因为我们知道：静态方法是属于类的而不属于对象的。同样的，synchronized修饰的静态方法锁定的是这个类的所有对象。
+synchronized修饰类的时候，synchronized作用于类T，是给这个类T加锁，T的所有对象用的是同一把锁。也就是方法体内，对对象的方法调用，同一时间只能有一个对象拿到锁，去执行操作。在sharedPrefrences的注释里面有写明「线程安全」，所以线程这个类是线程安全的，同时只能有一个线程操作。
+
+### 相关问题
+
+#### 一、SharedPreferences是线程安全的吗？
+
+是的，从源码里面可以看到使用了大量的**synchronized**来保证线程安全。
 
 【参考文章】
 
