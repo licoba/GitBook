@@ -14,19 +14,15 @@ sharedPreferences.getString("licoba",""); //读取数据
 
 `SharedPreferences sp = getSharedPreferences("data",MODE_PRIVATE);`
 
-在Android studio里面点击源码，会跳转到Context类的同名抽象方法
+在Android studio里面点击源码，会跳转到`Context`类的同名抽象方法
 
 ```text
 public abstract SharedPreferences getSharedPreferences(String name, @PreferencesMode int mode);
 ```
 
-由于这是一个抽象方法，所以得要找到他的实现类
+由于这是一个抽象方法，所以得要找到他的实现类，**Context**类对应的实现类是**ContextImpl**
 
-在cs.android.com里搜索`public abstract class Context`,也就是Context类，来到了`frameworks/base/core/java/android/content/Context.java`
-
-找到抽象类的具体实现，Context的具体实现类就是ContextImpl，点进去就是我们想要看的源码了。
-
-上代码
+下面是**ContextImpl**类的`getSharedPreferences`部分代码
 
 * ContextImpl.class
 
