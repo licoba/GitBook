@@ -8,6 +8,7 @@
 * [操作系统相关](cha-lou-bu-que/cao-zuo-xi-tong-xiang-guan/README.md)
   * [进程和线程的区别](cha-lou-bu-que/cao-zuo-xi-tong-xiang-guan/jin-cheng-he-xian-cheng-de-qu-bie.md)
 * [Java相关](cha-lou-bu-que/java-xiang-guan/README.md)
+  * [Java里面的几种引用类型](cha-lou-bu-que/java-xiang-guan/java-li-mian-de-ji-zhong-yin-yong-lei-xing.md)
   * [Java基础](cha-lou-bu-que/java-xiang-guan/java-ji-chu/README.md)
     * [String、StringBuilder、StringBuffer的区别](cha-lou-bu-que/java-xiang-guan/java-ji-chu/stringstringbuilderstringbuffer-de-qu-bie.md)
     * [强类型、弱类型、静态类型、动态类型](cha-lou-bu-que/java-xiang-guan/java-ji-chu/qiang-lei-xing-ruo-lei-xing-jing-tai-lei-xing-dong-tai-lei-xing.md)
