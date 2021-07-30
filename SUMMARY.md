@@ -10,6 +10,7 @@
 * [Java相关](cha-lou-bu-que/java-xiang-guan/README.md)
   * [Java里面的几种引用类型](cha-lou-bu-que/java-xiang-guan/java-li-mian-de-ji-zhong-yin-yong-lei-xing.md)
   * [Java基础](cha-lou-bu-que/java-xiang-guan/java-ji-chu/README.md)
+    * [HashMap和ConcurrentHashMap](cha-lou-bu-que/java-xiang-guan/java-ji-chu/hashmap-he-concurrenthashmap.md)
     * [Java线程池使用和原理](cha-lou-bu-que/java-xiang-guan/java-ji-chu/android-xian-cheng-chi-yuan-li-he-shi-yong.md)
     * [String、StringBuilder、StringBuffer的区别](cha-lou-bu-que/java-xiang-guan/java-ji-chu/stringstringbuilderstringbuffer-de-qu-bie.md)
     * [强类型、弱类型、静态类型、动态类型](cha-lou-bu-que/java-xiang-guan/java-ji-chu/qiang-lei-xing-ruo-lei-xing-jing-tai-lei-xing-dong-tai-lei-xing.md)
