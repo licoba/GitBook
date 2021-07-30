@@ -18,6 +18,7 @@
 ### Java
 
 * [Java里的几种引用](https://licoba.gitbook.io/androidbook/cha-lou-bu-que/java-xiang-guan/java-li-mian-de-ji-zhong-yin-yong-lei-xing)
+* [Java线程池原理](https://licoba.gitbook.io/androidbook/cha-lou-bu-que/java-xiang-guan/java-ji-chu/android-xian-cheng-chi-yuan-li-he-shi-yong)
 
 ### Android
 
