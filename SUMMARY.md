@@ -48,7 +48,7 @@
   * [JVM 和 DVM 相关知识](cha-lou-bu-que/android-xiang-guan/jvm-he-dvm-xiang-guan-zhi-shi.md)
   * [Handler 和 Looper 相关知识](cha-lou-bu-que/android-xiang-guan/handler-he-looper-xiang-guan-zhi-shi.md)
   * [Android进程间通信](cha-lou-bu-que/android-xiang-guan/android-jin-cheng-jian-tong-xin.md)
-  * [Android线程池使用和原理](cha-lou-bu-que/android-xiang-guan/android-xian-cheng-chi-yuan-li-he-shi-yong.md)
+  * [Java线程池使用和原理](cha-lou-bu-que/android-xiang-guan/android-xian-cheng-chi-yuan-li-he-shi-yong.md)
   * [Android的事件分发](cha-lou-bu-que/android-xiang-guan/android-de-shi-jian-fen-fa.md)
   * [Android内存泄露检测](cha-lou-bu-que/android-xiang-guan/android-nei-cun-xie-lu-jian-ce.md)
   * [Android中的动画](cha-lou-bu-que/android-xiang-guan/android-zhong-de-dong-hua.md)
