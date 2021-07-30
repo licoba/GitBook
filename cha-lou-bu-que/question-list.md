@@ -15,7 +15,11 @@
 * [HTTP1.0/1.1/1.2的区别](https://licoba.gitbook.io/androidbook/cha-lou-bu-que/wang-luo-xiang-guan/http-he-https#http-1-0-1-1-2-0-zhi-jian-de-qu-bie-he-te-xing)
 * [对称加密和非对称加密](https://licoba.gitbook.io/androidbook/cha-lou-bu-que/wang-luo-xiang-guan/http-he-https#dui-cheng-jia-mi-he-fei-dui-cheng-jia-mi)
 
-Android
+### Java
+
+* [Java里的几种引用](https://licoba.gitbook.io/androidbook/cha-lou-bu-que/java-xiang-guan/java-li-mian-de-ji-zhong-yin-yong-lei-xing)
+
+### Android
 
 * [SharedPreferences的问题以及优化](https://licoba.gitbook.io/androidbook/cha-lou-bu-que/android-xiang-guan/sharedpreferences-xiang-guan)
 
