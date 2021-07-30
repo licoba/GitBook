@@ -1,4 +1,4 @@
-# Android线程池原理和使用
+# Android线程池使用和原理
 
 ## new Thread 的缺点
 
