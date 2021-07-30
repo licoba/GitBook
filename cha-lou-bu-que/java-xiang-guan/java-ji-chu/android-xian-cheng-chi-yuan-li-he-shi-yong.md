@@ -42,7 +42,7 @@
 * 清空态
 * 销毁态
 
-![](../../.gitbook/assets/image%20%2831%29.png)
+![](../../../.gitbook/assets/image%20%2831%29.png)
 
 【参考文章】
 
