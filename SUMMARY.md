@@ -44,7 +44,7 @@
     * [Activity的启动流程](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/activity-de-qi-dong-liu-cheng.md)
     * [Activity的启动模式](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/activity-de-qi-dong-mo-shi.md)
     * [四大组件之 BroadcastReceiver](cha-lou-bu-que/android-xiang-guan/si-da-zu-jian/si-da-zu-jian-zhi-broadcastreceiver.md)
-  * [🤕 MVC、MVP、MVVM的区别](cha-lou-bu-que/android-xiang-guan/mvcmvpmvvm-de-qu-bie.md)
+  * [MVC、MVP、MVVM的区别](cha-lou-bu-que/android-xiang-guan/mvcmvpmvvm-de-qu-bie.md)
   * [Parcelable和Serializable](cha-lou-bu-que/android-xiang-guan/parcelable-he-serializable.md)
   * [ListView 和 RecycleView](cha-lou-bu-que/android-xiang-guan/listview-he-recycleview.md)
   * [JVM 和 DVM 相关知识](cha-lou-bu-que/android-xiang-guan/jvm-he-dvm-xiang-guan-zhi-shi.md)
