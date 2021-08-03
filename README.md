@@ -8,7 +8,7 @@ description: 记录Android相关的知识点，用于巩固所学以及查漏补
 
 个人整理的 Android 知识点，可以通过以下方式查看完整的文档：
 
- * 基于 GitBook：[https://licoba.gitbook.io/androidbook](https://licoba.gitbook.io/androidbook)
+* 基于 GitBook：[https://licoba.gitbook.io/androidbook](https://licoba.gitbook.io/androidbook)
 
 ## 友情链接
 
