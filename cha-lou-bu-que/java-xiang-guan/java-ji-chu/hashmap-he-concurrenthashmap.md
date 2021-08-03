@@ -2,9 +2,7 @@
 description: HashMap散列算法、哈希冲突、哈希扩容、线程安全
 ---
 
-# HashMap和ConcurrentHashMap
-
-首先明确几个概念
+# HashMap相关问题
 
 ## 【概念介绍】
 
@@ -33,8 +31,6 @@ Hash冲突就是，不同的对象，进行Hash计算之后的值相等，这两
 * 扩容因子：一个值，例如hashmap的扩容因子默认是0.75，装填因子大于这个值时就可能会触发hash扩容
 
 
-
-### 
 
 ## 【常见问题】
 
