@@ -9,4 +9,14 @@ description: Android 图片请求框架--Glide源码分析
 ### Glide使用
 
 * Glide的Github地址：[https://github.com/bumptech/glide](https://github.com/bumptech/glide)
+* 简体中文文档：[https://muyangmin.github.io/glide-docs-cn/](https://muyangmin.github.io/glide-docs-cn/)
+* 用法：
+
+```java
+Glide.with(fragment)
+    .load(url)
+    .into(imageView);
+```
+
+
 
