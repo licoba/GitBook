@@ -49,7 +49,7 @@ LRU：Least Recently Used 「最少最近使用算法」
 
 基本原则：LRU算法认为，“如果数据最近被访问过，那么将来被访问的几率也更高”，所以LRU缓存策略会优先回收最近一段时间，最少使用的那些对象。
 
-### LruCache
+#### LruCache
 
 LruCache是Android提供的一个缓存工具类，给LruCache指定一大小，然后使用put和get方法，Android会自动帮我们实现Lru的效果，也就是资源的回收，使用可以避免OOM问题。
 
