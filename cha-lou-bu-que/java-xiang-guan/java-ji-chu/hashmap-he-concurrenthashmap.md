@@ -90,6 +90,24 @@ Hash冲突就是，不同的对象，进行Hash计算之后的值相等，这两
 
 
 
+### HashMap构造函数的参数含义
+
+HashMap 有四个构造函数，分别是：
+
+* HashMap\(\)
+* HashMap\(int initialCapacity\)
+* HashMap\(int initialCapacity, float loadFactor\)
+* HashMap\(Map&lt;? extends K, ? extends V&gt; m\)
+
+看一下 `HashMap(int initialCapacity, float loadFactor)` 这个构造函数里面的两个参数：
+
+* initialCapacity：数组的初始容量大小，默认是16
+* loadFactor：扩容因子，当负载因子超过这个数的时候就会发生hash扩容
+
+  
+
+
+
 
 
 ## 【参考博客】
