@@ -59,15 +59,19 @@ public class Singleton {
 
 ### 枚举单例
 
-这种方法是线程安全的，但是在初始化时不能带入复杂的初始化代码。
+这种方法是线程安全的，并且有几点优势：一是写法简单，二是不会因为序列化破坏类的单例属性。枚举的序列化属性是由JVM保证的
 
 ```text
-public enum Singleton {  
-    INSTANCE;  
-    public void whateverMethod() {  
-    }  
+public enum SingletonEnum {
+    INSTANCE;
+    private String name;
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
 }
-
 ```
 
 ### 静态内部类单例
