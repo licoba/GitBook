@@ -63,9 +63,13 @@ Segment就是一个数组，存放数据时首先需要定位到具体的 Segmen
 
 原理：ConcurrentHashMap 采用了**分段锁**技术，其中 Segment 继承于 ReentrantLock（可重入锁）。不会像 HashTable 那样不管是 put 还是 get 操作都需要做同步处理。同一个Segment可以同时被写和读，不需要加锁；不同Segment之间互不影响，可以被多个线程同时写入。
 
-在get和put的时候，都需要先通过hash值获取在segment数组中的下标，然后通过hash值定位到具体位置。在put的时候，需要先获取到segment的可重入锁，然后定位到segment，然后定位到具体问题，覆盖或者直接写入，最后释放锁。get不需要加锁，因为使用了volidate声明Entry，每次都是从主存读取最新值
+在get和put的时候，都需要先通过hash值获取在segment数组中的下标，然后通过hash值定位到具体位置。在put的时候，需要先获取到segment的可重入锁，然后定位到segment，然后定位到具体问题，覆盖或者直接写入，最后释放锁。get不需要加锁，因为使用了volatile声明Entry，每次都是从主存读取最新值
 
 如果当一个线程插入的时候，同时又有一个线程在读取ConcurrentHashmap的size，那怎么保证size总是正确的？答：首先会将每个segment的元素个数相加，然后还会计算ConcurrentHashmap被修改的次数，如果修改次数和统计开始之前相同，那么就是准确的；如果不同，则表示ConcurrentHashmap被修改过，就重新统计个数，并且统计次数加一，如果统计次数超过了阈值，也就表示统计的时候ConcurrentHashmap一直在被修改，那么直接给ConcurrentHashmap加锁，获取到准确个数了之后再释放锁（先乐观再悲观）
 
 ### JDK 1.8中的ConcurrentHashmap
+
+1.8也是为了解决链表过长，查找效率过低的问题，采用了CAS+Synchronized来保证线程安全，达到了阈值（链表长度大于8）之后会将链表转化为红黑树，提升查询的效率。通过在put方法前加Synchronized来保证线程安全。
+
+CAS算法可以保证线程安全，为什么还要加入Synchronized？答：CAS是乐观锁，适用于竞争比较小的情况，如果是大量线程在竞争，就可能会一直陷入自旋的情况，会造成CPU资源的浪费。Synchronized是悲观锁，适用于兵法数量比较大的情况。
 
