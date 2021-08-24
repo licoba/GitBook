@@ -53,3 +53,19 @@ void transfer(Entry[] newTable, boolean rehash) {
 1. 在 jdk1.7 中，在多线程环境下，扩容时会造成环形链表或数据丢失。
 2. 在 jdk1.8 中，在多线程环境下，会发生数据覆盖的情况。
 
+
+
+### JDK 1.7中的ConcurrentHashmap
+
+JDK 1.7中的ConcurrentHashmap有一个重要的概念：就是**Segment。**
+
+Segment就是一个数组，存放数据时首先需要定位到具体的 Segment 中。
+
+原理：ConcurrentHashMap 采用了**分段锁**技术，其中 Segment 继承于 ReentrantLock（可重入锁）。不会像 HashTable 那样不管是 put 还是 get 操作都需要做同步处理。同一个Segment可以同时被写和读，不需要加锁；不同Segment之间互不影响，可以被多个线程同时写入。
+
+在get和put的时候，都需要先通过hash值获取在segment数组中的下标，然后通过hash值定位到具体位置。在put的时候，需要先获取到segment的可重入锁，然后定位到segment，然后定位到具体问题，覆盖或者直接写入，最后释放锁。get不需要加锁，因为使用了volidate声明Entry，每次都是从主存读取最新值
+
+如果当一个线程插入的时候，同时又有一个线程在读取ConcurrentHashmap的size，那怎么保证size总是正确的？答：首先会将每个segment的元素个数相加，然后还会计算ConcurrentHashmap被修改的次数，如果修改次数和统计开始之前相同，那么就是准确的；如果不同，则表示ConcurrentHashmap被修改过，就重新统计个数，并且统计次数加一，如果统计次数超过了阈值，也就表示统计的时候ConcurrentHashmap一直在被修改，那么直接给ConcurrentHashmap加锁，获取到准确个数了之后再释放锁（先乐观再悲观）
+
+### JDK 1.8中的ConcurrentHashmap
+
