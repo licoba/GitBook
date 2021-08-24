@@ -73,3 +73,7 @@ Segment就是一个数组，存放数据时首先需要定位到具体的 Segmen
 
 CAS算法可以保证线程安全，为什么还要加入Synchronized？答：CAS是乐观锁，适用于竞争比较小的情况，如果是大量线程在竞争，就可能会一直陷入自旋的情况，会造成CPU资源的浪费。Synchronized是悲观锁，适用于兵法数量比较大的情况。
 
+### 和HashTable的区别？
+
+HashTable采用了全表加锁的策略，get和put方法都使用了synchonized来加锁，而synronized属于重量级锁，效率不够高，始终只能有一个线程操作hashtable，一个线程写的时候，另一个线程就算是读也要得前一个线程释放hashtable的全表锁。
+
