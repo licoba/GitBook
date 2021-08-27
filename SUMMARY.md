@@ -27,7 +27,7 @@
     * [类加载器与双亲委派模型](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/lei-jia-zai-qi-yu-shuang-qin-wei-pai-mo-xing.md)
     * [Class类文件的组成](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/class-lei-wen-jian-de-zu-cheng.md)
     * [JVM垃圾回收](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/jvm-la-ji-hui-shou.md)
-    * [JVM运行时数据区域](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/jvm-yun-hang-shi-shu-ju-qu-yu.md)
+    * [JVM内存模型](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/jvm-nei-cun-mo-xing.md)
     * [JVM的类加载过程](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/jvm-de-lei-jia-zai-guo-cheng.md)
   * [Java高级特性](cha-lou-bu-que/java-xiang-guan/java-gao-ji-te-xing/README.md)
     * [静态代理和动态代理](cha-lou-bu-que/java-xiang-guan/java-gao-ji-te-xing/jing-tai-dai-li-he-dong-tai-dai-li.md)
