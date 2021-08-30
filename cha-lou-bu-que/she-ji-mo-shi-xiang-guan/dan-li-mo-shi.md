@@ -94,7 +94,7 @@ public class Singleton {
 
 ```java
 public class Singleton {  
-    private volatile static Singleton singleton;  
+    private volatile static Singleton singleton;  // volatile 防止指令重排序
     private Singleton (){}  
     public static Singleton getSingleton() {  
         if (singleton == null) { // 第一次判空
@@ -115,6 +115,12 @@ public class Singleton {
 
 * 第一次判空是为了判断对象是否创建，为正常的判空逻辑。
 * 第二次判空是防止对象重复创建，因为可能会存在多个线程通过了第一次判断在等待锁，来创建新的实例对象。如果不在 synchronized 里判空，多线程执行的时候就有可能重复创建对象。
+
+#### 不同场景下应该怎么选择创建方式？
+
+为了多线程单例模式的安全，尽量选择静态内部类和双重校验锁来创建单例。如果要涉及到序列化与反序列化，就使用枚举来创建单例。
+
+
 
 【参考文章】
 
