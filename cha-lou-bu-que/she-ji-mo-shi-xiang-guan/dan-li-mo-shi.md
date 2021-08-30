@@ -97,14 +97,14 @@ public class Singleton {
     private volatile static Singleton singleton;  
     private Singleton (){}  
     public static Singleton getSingleton() {  
-    if (singleton == null) { // 第一次判空
-        synchronized (Singleton.class) {  // 多个线程在这里等待锁释放
-            if (singleton == null) {  // 第二次判空
-                singleton = new Singleton();  
+        if (singleton == null) { // 第一次判空
+            synchronized (Singleton.class) {  // 多个线程在这里等待锁释放
+                if (singleton == null) {  // 第二次判空
+                    singleton = new Singleton();  
+                }  
             }  
         }  
-    }  
-    return singleton;  
+        return singleton;  
     }  
 }
 ```
@@ -113,7 +113,7 @@ public class Singleton {
 
 #### 双重校验锁为什么要两次判空？
 
-* 第一次判空是为了判断对象是否创建
+* 第一次判空是为了判断对象是否创建，为正常的判空逻辑。
 * 第二次判空是防止对象重复创建，因为可能会存在多个线程通过了第一次判断在等待锁，来创建新的实例对象。如果不在 synchronized 里判空，多线程执行的时候就有可能重复创建对象。
 
 【参考文章】
