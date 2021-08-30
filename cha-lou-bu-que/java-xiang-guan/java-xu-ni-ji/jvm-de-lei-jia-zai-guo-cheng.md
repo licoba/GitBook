@@ -8,6 +8,8 @@ description: 5个阶段：加载、验证、准备、解析、初始化
 
 ![&#x7C7B;&#x52A0;&#x8F7D;&#x7684;&#x8FC7;&#x7A0B;](https://pic4.zhimg.com/80/v2-ecf6c3d0f5146029e9693d6223d23afb_720w.jpg)
 
+![&#x7C7B;&#x52A0;&#x8F7D;&#x8111;&#x56FE;](../../../.gitbook/assets/image%20%282%29.png)
+
 ## 前言
 
 一个 Java 文件从编码完成到最终执行，主要包括两个过程：`编译`和`运行`
