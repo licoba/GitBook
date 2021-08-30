@@ -1,5 +1,5 @@
 ---
-description: 5个数据区域
+description: JVM的5个运行时数据区域
 ---
 
 # JVM内存模型
