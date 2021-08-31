@@ -19,7 +19,7 @@
     * [Static和Final关键字](cha-lou-bu-que/java-xiang-guan/java-ji-chu/static-he-final-guan-jian-zi.md)
     * [HashMap 和 LinkedHashMap](cha-lou-bu-que/java-xiang-guan/java-ji-chu/hashmap-he-linkedhashmap.md)
     * [Integer和int的比较](cha-lou-bu-que/java-xiang-guan/java-ji-chu/int-he-integer-de-bi-jiao.md)
-    * [hashCode 和 equals 方法](cha-lou-bu-que/java-xiang-guan/java-ji-chu/hashcode-he-equals-fang-fa.md)
+    * [hashCode、equals和==](cha-lou-bu-que/java-xiang-guan/java-ji-chu/hashcode-he-equals-fang-fa.md)
   * [Java虚拟机](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/README.md)
     * [Java内存模型](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/java-nei-cun-mo-xing.md)
     * [基于栈的指令集和基于寄存器的指令集](cha-lou-bu-que/java-xiang-guan/java-xu-ni-ji/ji-yu-zhan-de-zhi-ling-ji-he-ji-yu-ji-cun-qi-de-zhi-ling-ji.md)

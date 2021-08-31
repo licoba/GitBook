@@ -16,6 +16,8 @@
 
 #### 为什么重写equals\(\)方法，也要重写hashCode\(\)方法？
 
+其实
+
 因为我们重写equals方法一般都是，重写去判断他的value是否相等了。 但是Java里面对hashCode有一个定义：「相同对象的hashCode必须相同」 所以如果new两个值相同的对象，然后重写的equal返回true，那这个时候（没重写hashCode的时候），hashCode必定是不想等的，所以我们需要重写hashCode方法来保证他的hashCode，一定相等，归根到底，是为了遵循「必须保证重写后的equals方法认定相同的两个对象拥有相同的哈希值」这个定律（Java里面对hashCode的规定）。
 
 ### 总结（考点）
