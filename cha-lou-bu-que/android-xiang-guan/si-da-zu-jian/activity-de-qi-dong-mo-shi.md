@@ -6,7 +6,7 @@ description: 重点：Activity的四种启动模式以及区别
 
 ## 启动模式的不同
 
-* **standard**：普通的 Activity 启动就是采用的这种模式，采用标准模式启动的 Activity，无论栈里面是有这个 Activity，都会去新建一个 Activity 对象，然后压入栈里。
+* **standard**：普通的 Activity 启动就是采用的这种模式，采用标准模式启动的 Activity，无论栈里面有没有这个 Activity，都会去新建一个 Activity 对象，然后压入栈里。
 * **singleTop**：这里分两种情况：如果在栈里发现了相同的实例，那么会重用这个实例，不会新建 Activity；如果在栈顶没有发现这个实例，那么就会新建一个实例，压入栈内（不管底部是否有 Activity 的实例，只看栈顶）
 * **singleTask**：这个启动模式会在整个栈里面去寻找 Activity 实例，如果找到了，就终止它上面的所有 Activity 实例然后将它们移出栈；如果没找到，就新建一个实例然后压入栈里。
 * **singleInstance**：这个模式比较特殊，会另起一个栈存放这个 Activity，无论在哪里调用都是重用这个 Activity，并让多个应用共享该栈中的 Activity 实例。
