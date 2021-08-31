@@ -4,6 +4,8 @@ description: 重点：Activity的四种启动模式以及区别
 
 # Activity的启动模式
 
+![](../../../.gitbook/assets/image%20%2810%29.png)
+
 ## 启动模式的不同
 
 * **standard**：普通的 Activity 启动就是采用的这种模式，采用标准模式启动的 Activity，无论栈里面有没有这个 Activity，都会去新建一个 Activity 对象，然后压入栈里。
