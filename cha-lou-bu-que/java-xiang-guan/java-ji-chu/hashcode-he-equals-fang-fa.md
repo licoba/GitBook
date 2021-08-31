@@ -49,6 +49,13 @@ A：equals 方法是严格判断一个对象是否相等的方法，hashCode 值
 
 A：重写 `equals` 和 `hashCode` 两个方法才行。
 
+#### Q：equals方法和==方法有什么不同？
+
+* `==`方法用来判断两个对象的地址是否一样
+* equals方法分为两种情况：
+  * 在重写了`equals`方法时，通常用来判断两个对象的内容是否相等；
+  * 在没有重写`equals`方法时，和`==`方法作用一样（也就是Object类的==方法）
+
 【参考文章】
 
 * [Java 提高篇——equals\(\)与 hashCode\(\)方法详解](https://www.cnblogs.com/qian123/p/5703507.html)
