@@ -1,12 +1,8 @@
 # 谈一谈HashCode
 
-
-
 ### 强烈建议
 
-看一看这篇文章：[https://www.cnblogs.com/qian123/p/5703507.html](https://www.cnblogs.com/qian123/p/5703507.html)
-
-写的非常好！
+看一看这篇文章：[https://www.cnblogs.com/qian123/p/5703507.html](https://www.cnblogs.com/qian123/p/5703507.html) 写的非常好！
 
 首先说明hashCode在Java源码里的方法注释中有写：
 
