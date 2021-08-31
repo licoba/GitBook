@@ -36,4 +36,5 @@ description: 重点：Activity的四种启动模式以及区别
 
 * [Android Activity 的 Launch Mode](https://hit-alibaba.github.io/interview/Android/basic/Android-LaunchMode.html)
 * [Activity 的四种启动模式](https://www.jianshu.com/p/02fa2877a496)
+* [https://blog.csdn.net/mynameishuangshuai/article/details/51491074](https://blog.csdn.net/mynameishuangshuai/article/details/51491074) （有代码，推荐）
 
