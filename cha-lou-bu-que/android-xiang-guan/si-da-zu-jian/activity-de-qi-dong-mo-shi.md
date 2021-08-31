@@ -4,7 +4,7 @@ description: 重点：Activity的四种启动模式以及区别
 
 # Activity的启动模式
 
-![](../../../.gitbook/assets/image%20%2810%29.png)
+![Activity&#x7684;&#x56DB;&#x79CD;&#x542F;&#x52A8;&#x6A21;&#x5F0F;](../../../.gitbook/assets/image%20%2810%29.png)
 
 ## 启动模式的不同
 
