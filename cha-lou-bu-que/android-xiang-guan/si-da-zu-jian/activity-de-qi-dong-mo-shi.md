@@ -20,15 +20,13 @@ description: 重点：Activity的四种启动模式以及区别
 
 ## Q&A？
 
-* **怎么记这 4 个启动模式？**
+#### **Q：怎么记这 4 个启动模式？**
 
-  主要要理解 single 后面跟的不同的模式的含义，这里的 task、top、instance 都是指“面向”，比如说：面向 top，就是在 top 上去查找；面向 task，就是在栈里面去查找；面向 instance，这个可以理解成为“单例”，就是在全局都只会有一个这个 instance
+主要要理解 single 后面跟的不同的模式的含义，这里的 task、top、instance 都是指“面向”，比如说：面向 top，就是在 top 上去查找；面向 task，就是在栈里面去查找；面向 instance，这个可以理解成为“单例”，就是在全局都只会有一个这个 instance
 
+#### **Q：复用 Activity，启动的时候会调用 Activity 的什么方法？**
 
-
-* **复用 Activity，启动的时候会调用 Activity 的什么方法？**
-
-  以 singleTask 为例，如果是栈内有实例了，那么不会走 OnCreate，而是走： `onNewInstance->onRestart->onStart->onResume`
+以 singleTask 为例，如果是栈内有实例了，那么不会走 OnCreate，而是走： `onNewInstance->onRestart->onStart->onResume`
 
 > PS：今天的面试里面这个简单的东西都没答上来，很惭愧，特意来补充一下
 
