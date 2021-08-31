@@ -41,13 +41,13 @@ equals 方法一般的调用方法像这样：`obj1.equals(obj2)`
 
 ## Q&A？
 
-* Q：equals\(\)和 hashCode\(\)有什么区别？
+#### Q：equals\(\)和 hashCode\(\)有什么区别？
 
-  A：equals 方法是严格判断一个对象是否相等的方法，hashCode 值是根据内存地址换算出来的一个值。
+A：equals 方法是严格判断一个对象是否相等的方法，hashCode 值是根据内存地址换算出来的一个值。
 
-* Q：怎么比较两个对象是否真正相等？
+#### Q：怎么比较两个对象是否真正相等？
 
-  A：重写 `equals` 和 `hashCode` 两个方法才行。
+A：重写 `equals` 和 `hashCode` 两个方法才行。
 
 【参考文章】
 
