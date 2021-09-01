@@ -8,6 +8,8 @@
 * [操作系统相关](cha-lou-bu-que/cao-zuo-xi-tong-xiang-guan/README.md)
   * [进程和线程的区别](cha-lou-bu-que/cao-zuo-xi-tong-xiang-guan/jin-cheng-he-xian-cheng-de-qu-bie.md)
 * [Java相关](cha-lou-bu-que/java-xiang-guan/README.md)
+  * [Java多线程](cha-lou-bu-que/java-xiang-guan/java-duo-xian-cheng.md)
+  * [ThreadLocal原理](cha-lou-bu-que/java-xiang-guan/threadlocal-yuan-li.md)
   * [Java里面的几种引用类型](cha-lou-bu-que/java-xiang-guan/java-li-mian-de-ji-zhong-yin-yong-lei-xing.md)
   * [Java基础](cha-lou-bu-que/java-xiang-guan/java-ji-chu/README.md)
     * [ConcurrentHashMap相关](cha-lou-bu-que/java-xiang-guan/java-ji-chu/concurrenthashmap-xiang-guan.md)
