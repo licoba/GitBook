@@ -42,7 +42,7 @@ Hash冲突就是，不同的对象，进行Hash计算之后的值相等，这两
 
 在put一个新元素时，需要满足2个条件才会发生Hash扩容：
 
-1. HashMap中的元素个数 &gt;= HashMap容量 \* 扩容因子
+1. HashMap中的元素个数 >= HashMap容量 \* 扩容因子
 2. 新元素刚好落在一个非空的Hash桶上
 
 也就是在已经达到了负载因子的承载极限，并且发生了Hash冲突，就会立马进行Hash扩容。
@@ -65,12 +65,12 @@ Hash冲突就是，不同的对象，进行Hash计算之后的值相等，这两
 
 概括：提升扩容的运算效率、减少Hash冲突
 
-* HashMap计算元素位置时，使用的位运算代替取余运算，效率会高很多，源码里面就是与\(length-1\)进行与运算（x & 011111111111）这样的运算
+* HashMap计算元素位置时，使用的位运算代替取余运算，效率会高很多，源码里面就是与(length-1)进行与运算（x & 011111111111）这样的运算
 * 容量是2的n次幂，可以使得添加的元素均匀分布在HashMap中的数组上，减少hash碰撞，源码里面与length-1进行与运算，可以保证&运算都是与11111111进行&，如果里面有一个0，那么&的结果，就不是每个下标几率都相等了，会造成Hash冲突。（最主要的原因是，如果不是2的n次幂，那运算出来的结果根本就不是取余的结果了，这个hash算法的定义就相悖）
 
 ### put方法流程
 
-首先调用hash\(key\)得到key的hash值
+首先调用hash(key)得到key的hash值
 
 1. 如果 K 的 hash 值在 HashMap 中不存在，则执行插入，若存在，则发生碰撞；　
 2. 如果 K 的 hash 值在 HashMap 中存在，且它们两者 equals 返回 true，则更新键值对；　
@@ -94,17 +94,18 @@ Hash冲突就是，不同的对象，进行Hash计算之后的值相等，这两
 
 HashMap 有四个构造函数，分别是：
 
-* HashMap\(\)
-* HashMap\(int initialCapacity\)
-* HashMap\(int initialCapacity, float loadFactor\)
-* HashMap\(Map&lt;? extends K, ? extends V&gt; m\)
+* HashMap()
+* HashMap(int initialCapacity)
+* HashMap(int initialCapacity, float loadFactor)
+* HashMap(Map\<? extends K, ? extends V> m)
 
-看一下 `HashMap(int initialCapacity, float loadFactor)` 这个构造函数里面的两个参数：
+看一下 `HashMap(int initialCapacity, float loadFactor) `这个构造函数里面的两个参数：
 
 * initialCapacity：数组的初始容量大小，默认是16
-* loadFactor：扩容因子，当负载因子超过这个数的时候就会发生hash扩容
+*   loadFactor：扩容因子，当负载因子超过这个数的时候就会发生hash扩容
 
-  
+    \
+
 
 
 
@@ -113,6 +114,4 @@ HashMap 有四个构造函数，分别是：
 ## 【参考博客】
 
 * [https://www.huaweicloud.com/zhishi/arc-8360144.html](https://www.huaweicloud.com/zhishi/arc-8360144.html)
-
-
 

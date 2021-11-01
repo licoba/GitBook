@@ -10,7 +10,7 @@ description: hashCode和==的区别？怎么判断两个对象是否相等？为
 
 我一般回答是用 hashCode 方法来比较两个对象是否一致，因为每个对象的 hashCode 都是唯一的。感觉回答得不是很好，所以专开一篇来记录一下。
 
-当然我想面试官这里主要考的是 equals\(\)方法和 hashCode\(\)方法的区别^\_^，因为这两个都是属于 Object 类的方法
+当然我想面试官这里主要考的是 equals()方法和 hashCode()方法的区别^\_^，因为这两个都是属于 Object 类的方法
 
 ### equals 方法
 
@@ -20,18 +20,18 @@ equals 方法一般的调用方法像这样：`obj1.equals(obj2)`
 
 比如在 String 类中的 equals 方法在重写了之后，就变成了比较两个对象的内容是否一样。
 
-但是，默认的类是没有重写 equals 方法的。若某个类没有覆盖 equals\(\)方法，当它的通过 equals\(\)比较两个对象时，实际上是比较两个对象是不是同一个对象。这时，等价于通过`==`去比较这两个对象。
+但是，默认的类是没有重写 equals 方法的。若某个类没有覆盖 equals()方法，当它的通过 equals()比较两个对象时，实际上是比较两个对象是不是同一个对象。这时，等价于通过`==`去比较这两个对象。
 
 > 对于`==`的理解：`==`可以理解为：比较的两个对象是否是同一个对象？也可以理解为：两个对象的地址是否是一样的？
 
 ### hashCode 方法
 
-> hashCode\(\) 的作用是获取哈希码，也称为散列码；它实际上是返回一个 int 整数。这个哈希码的作用是确定该对象在哈希表中的索引位置。
+> hashCode() 的作用是获取哈希码，也称为散列码；它实际上是返回一个 int 整数。这个哈希码的作用是确定该对象在哈希表中的索引位置。
 
 这里有两个需要注意的地方：
 
-* 1、如果两个对象相等，那么它们的 hashCode\(\)值一定要相同；
-* 2、如果两个对象 hashCode\(\)相等，它们并不一定相等。
+* 1、如果两个对象相等，那么它们的 hashCode()值一定要相同；
+* 2、如果两个对象 hashCode()相等，它们并不一定相等。
 
 但是，如果只重写了 equals 方法，在将两个值相同的元素添加到 hashSet（带有去重功能）的时候，hashSet 的 size 会是 2，这个不符合我们的预期，因为 hashSet 发现他们的 hashCode 不一样，会判定为是两个不同的元素。
 
@@ -43,15 +43,15 @@ equals 方法一般的调用方法像这样：`obj1.equals(obj2)`
 
 （3）重写 equasl 方法时，一定要记得重写 hashcode 方法，尤其用在 hash 类的数据结构中。
 
-## Q&A？
+## Q\&A？
 
-#### Q：equals\(\)和 hashCode\(\)有什么区别？
+#### Q：equals()和 hashCode()有什么区别？
 
 A：equals 方法是严格判断一个对象是否相等的方法，hashCode 值是根据内存地址换算出来的一个值。
 
 #### Q：怎么比较两个对象是否真正相等？
 
-A：重写 `equals` 和 `hashCode` 两个方法才行。
+A：重写 `equals` 和 `hashCode `两个方法才行。
 
 #### Q：equals方法和==方法有什么不同？
 
@@ -60,14 +60,13 @@ A：重写 `equals` 和 `hashCode` 两个方法才行。
   * 在重写了`equals`方法时，通常用来判断两个对象的内容是否相等；
   * 在没有重写`equals`方法时，和`==`方法作用一样（也就是Object类的==方法）
 
-#### Q：为什么重写equals\(\)方法的同时，还要重写hashCode\(\)方法？
+#### Q：为什么重写equals()方法的同时，还要重写hashCode()方法？
 
 A：因为我们重写equals方法一般都是，重写去判断他的value是否相等了。 但是Java里面对hashCode有一个定义：「相同对象的hashCode必须相同」 所以如果new两个值相同的对象，然后重写的equal返回true，那这个时候（没重写hashCode的时候），hashCode必定是不相等的，所以我们需要重写hashCode方法来保证他的hashCode一定相等。归根到底，是为了遵循「**必须保证重写后的equals方法认定相同的两个对象拥有相同的哈希值**」这个定律（Java里面对hashCode的规定）。
 
 【参考文章】
 
-* [Java 提高篇——equals\(\)与 hashCode\(\)方法详解](https://www.cnblogs.com/qian123/p/5703507.html)
-* [Java hashCode\(\) 和 equals\(\)的若干问题解答](https://www.cnblogs.com/skywang12345/p/3324958.html)
+* [Java 提高篇——equals()与 hashCode()方法详解](https://www.cnblogs.com/qian123/p/5703507.html)
+* [Java hashCode() 和 equals()的若干问题解答](https://www.cnblogs.com/skywang12345/p/3324958.html)
 * [java 中 hashCode 和 equals 的使用](https://www.jianshu.com/p/7557b98e785d)
 * [细说 equals 方法和 hashCode 方法](https://juejin.im/post/5a17edd9f265da4310481269)
-

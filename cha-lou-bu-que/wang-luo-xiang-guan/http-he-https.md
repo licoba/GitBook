@@ -70,5 +70,4 @@ HTTP 1.1在一个TCP连接内，虽然可以发起多个HTTP请求，但是是�
 * 【知乎】[http 1.0 1.1 1.2 区别 ](https://zhuanlan.zhihu.com/p/308381209)
 * 【掘金】[HTTP1.0、HTTP1.1 和 HTTP2.0 的区别](https://juejin.cn/post/6844903489596833800)
 * [HTTP 和 HTTPS 的区别和常见问题](https://www.cnblogs.com/aidixie/p/11764181.html)
-* \*\*\*\*[**「HTTPS」如何通俗易懂的给你讲明白HTTPS？**](https://juejin.cn/post/6955767063524671524)\*\*\*\*
-
+* ****[**「HTTPS」如何通俗易懂的给你讲明白HTTPS？**](https://juejin.cn/post/6955767063524671524)****
