@@ -6,6 +6,7 @@
 
 * [Question List](cha-lou-bu-que/question-list.md)
 * [操作系统相关](cha-lou-bu-que/cao-zuo-xi-tong-xiang-guan/README.md)
+  * [Linux进程间通信的方式](cha-lou-bu-que/cao-zuo-xi-tong-xiang-guan/linux-jin-cheng-jian-tong-xin-de-fang-shi.md)
   * [进程和线程的区别](cha-lou-bu-que/cao-zuo-xi-tong-xiang-guan/jin-cheng-he-xian-cheng-de-qu-bie.md)
 * [Java相关](cha-lou-bu-que/java-xiang-guan/README.md)
   * [Java多线程](cha-lou-bu-que/java-xiang-guan/java-duo-xian-cheng.md)
