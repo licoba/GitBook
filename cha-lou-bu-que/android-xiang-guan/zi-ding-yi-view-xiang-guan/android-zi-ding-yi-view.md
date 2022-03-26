@@ -10,7 +10,7 @@ Activity 的 View 的构成如下：
 
 简单的来说就是以下三个步骤：
 
-> &#x20;**OnMeasure()** —> **OnLayout() **—> **OnDraw()**
+> &#x20;**OnMeasure()** —> **OnLayout()** —> **OnDraw()**
 
 分别是`测量`、`布局`、`绘制`
 
